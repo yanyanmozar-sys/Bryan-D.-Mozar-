@@ -1,429 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bryan D. Mozar | AI Automation Specialist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Bryan Mozar | AI Automation Specialist</title>
 
-<style>
+    <meta name="description"
+        content="Bryan Mozar - AI Automation Specialist using n8n, Make.com, OpenAI, APIs, Airtable, Google Workspace and Business Workflow Automation.">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+    <meta name="keywords"
+        content="AI Automation,n8n,Make.com,OpenAI,Workflow Automation,API,Airtable,Automation Specialist">
 
-body{
-background:#0f172a;
-color:white;
-line-height:1.6;
-}
+    <meta name="author" content="Bryan Mozar">
 
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
-}
+    <meta property="og:title" content="Bryan Mozar | AI Automation Portfolio">
 
-.hero h1{
-font-size:55px;
-margin-bottom:10px;
-}
+    <meta property="og:description"
+        content="Professional AI Automation Portfolio using n8n, Make.com, OpenAI and Workflow Automation">
 
-.hero span{
-color:#38bdf8;
-}
+    <meta property="og:type" content="website">
 
-.hero h2{
-font-weight:400;
-color:#cbd5e1;
-margin-bottom:20px;
-}
+    <meta property="og:image" content="assets/profile.jpg">
 
-.hero p{
-max-width:700px;
-margin:auto;
-color:#94a3b8;
-font-size:18px;
-}
+    <meta property="og:url" content="https://yourusername.github.io">
 
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 35px;
-background:#38bdf8;
-color:#000;
-text-decoration:none;
-font-weight:600;
-border-radius:50px;
-transition:.3s;
-}
+    <link rel="icon" href="assets/favicon.ico">
 
-.btn:hover{
-background:white;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-section{
-padding:80px 10%;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.title{
-text-align:center;
-font-size:38px;
-margin-bottom:50px;
-color:#38bdf8;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.skill{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-}
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.project{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-}
-
-.project h3{
-color:#38bdf8;
-margin-bottom:15px;
-}
-
-footer{
-text-align:center;
-padding:40px;
-background:#111827;
-color:#94a3b8;
-}
-
-@media(max-width:900px){
-
-.about{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:40px;
-}
-
-}
-
-</style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+    <!-- Animated Background -->
 
-<div class="hero">
+    <div id="particles"></div>
 
-<h1>Bryan D. <span>Mozar</span></h1>
+    <!-- ===========================
+         NAVIGATION
+    ============================ -->
 
-<h2>AI Automation Specialist</h2>
+    <nav class="navbar">
 
-<p>
+        <div class="container">
 
-Helping businesses automate repetitive tasks using
-<b>n8n</b>, <b>Make.com</b>, AI Agents,
-OpenAI, Google Workspace, Airtable, APIs, CRM integrations,
-and workflow automation.
+            <a href="#" class="logo">
 
-</p>
+                Bryan<span>Mozar</span>
 
-<a href="#projects" class="btn">View My Work</a>
+            </a>
 
-</div>
+            <ul class="nav-links">
 
-</header>
+                <li><a href="#home">Home</a></li>
 
-<section>
+                <li><a href="#about">About</a></li>
 
-<h2 class="title">About Me</h2>
+                <li><a href="#skills">Skills</a></li>
 
-<div class="about">
+                <li><a href="#projects">Projects</a></li>
 
-<div class="card">
+                <li><a href="#services">Services</a></li>
 
-<h3>Who I Am</h3>
+                <li><a href="#timeline">Experience</a></li>
 
-<p>
+                <li><a href="#contact">Contact</a></li>
 
-I'm Bryan D. Mozar, an AI Automation Specialist passionate about building intelligent workflows that save businesses time and money.
+            </ul>
 
-I specialize in AI-powered automations using n8n and Make.com while integrating APIs, CRMs, email systems, databases, and AI assistants.
+            <div class="menu-btn">
 
-</p>
+                <i class="fa-solid fa-bars"></i>
 
-</div>
+            </div>
 
-<div class="card">
+        </div>
 
-<h3>What I Build</h3>
+    </nav>
 
-<ul>
+    <!-- ===========================
+            HERO SECTION
+    ============================ -->
 
-<li>✔ AI Agents</li>
+    <section id="home" class="hero">
 
-<li>✔ Business Automation</li>
+        <div class="hero-content">
 
-<li>✔ Lead Generation</li>
+            <div class="glass-card">
 
-<li>✔ CRM Automation</li>
+                <h3>Hello, I'm</h3>
 
-<li>✔ Sales Automation</li>
+                <h1>
 
-<li>✔ Telegram Bots</li>
+                    Bryan <span>Mozar</span>
 
-<li>✔ Facebook Messenger AI</li>
+                </h1>
 
-<li>✔ Inventory Systems</li>
+                <h2>
 
-<li>✔ Invoice Automation</li>
+                    <span id="typing"></span>
 
-<li>✔ Google Workspace Automation</li>
+                </h2>
 
-</ul>
+                <p>
 
-</div>
+                    I build intelligent AI Automation systems that save
+                    businesses hundreds of hours using
+                    <strong>n8n</strong>,
+                    <strong>Make.com</strong>,
+                    <strong>OpenAI</strong>,
+                    APIs,
+                    Airtable,
+                    Google Workspace,
+                    CRMs,
+                    and custom AI Agents.
 
-</div>
+                </p>
 
-</section>
+                <div class="hero-buttons">
 
-<section>
+                    <a href="#projects" class="btn primary">
 
-<h2 class="title">Skills</h2>
+                        View Projects
 
-<div class="skills">
+                    </a>
 
-<div class="skill">
-<h3>n8n</h3>
-<p>AI Agents, APIs, Webhooks, Google Workspace, Telegram, Airtable, OpenAI.</p>
-</div>
+                    <a href="assets/Bryan-Mozar-CV.pdf"
+                        class="btn secondary"
+                        download>
 
-<div class="skill">
-<h3>Make.com</h3>
-<p>Advanced business workflows, integrations, scheduling, automation pipelines.</p>
-</div>
+                        <i class="fa-solid fa-download"></i>
 
-<div class="skill">
-<h3>Artificial Intelligence</h3>
-<p>OpenAI, GPT, Prompt Engineering, AI Assistants, Chatbots.</p>
-</div>
+                        Download CV
 
-<div class="skill">
-<h3>API Integration</h3>
-<p>REST APIs, JSON, HTTP Requests, OAuth, Webhooks.</p>
-</div>
+                    </a>
 
-<div class="skill">
-<h3>Database</h3>
-<p>Airtable, Google Sheets, Notion, CRM Platforms.</p>
-</div>
+                </div>
 
-<div class="skill">
-<h3>Automation</h3>
-<p>Sales, Marketing, Customer Support, Scheduling, Reporting.</p>
-</div>
+                <div class="social-icons">
 
-</div>
+                    <a href="#" target="_blank">
 
-</section>
+                        <i class="fab fa-github"></i>
 
-<section id="projects">
+                    </a>
 
-<h2 class="title">Featured Projects</h2>
+                    <a href="#" target="_blank">
 
-<div class="projects">
+                        <i class="fab fa-linkedin"></i>
 
-<div class="project">
+                    </a>
 
-<h3>AI Sales Agent</h3>
+                    <a href="#" target="_blank">
 
-<p>
+                        <i class="fab fa-facebook"></i>
 
-Automated outbound lead generation using AI, email personalization,
-CRM updates, and follow-up automation.
+                    </a>
 
-</p>
+                    <a href="mailto:your@email.com">
 
-</div>
+                        <i class="fa-solid fa-envelope"></i>
 
-<div class="project">
+                    </a>
 
-<h3>Dental Clinic AI</h3>
+                </div>
 
-<p>
+            </div>
 
-Facebook Messenger AI chatbot with appointment scheduling,
-Google Calendar integration,
-email confirmation,
-and CRM synchronization.
+        </div>
 
-</p>
+        <!-- Floating AI Cards -->
 
-</div>
+        <div class="floating-card card1">
 
-<div class="project">
+            <i class="fa-solid fa-robot"></i>
 
-<h3>Inventory Automation</h3>
+            <h4>AI Agents</h4>
 
-<p>
+            <p>Custom GPT Workflows</p>
 
-AI-powered inventory management using Airtable,
-stock monitoring,
-automatic restocking alerts,
-and reporting dashboards.
+        </div>
 
-</p>
+        <div class="floating-card card2">
 
-</div>
+            <i class="fa-solid fa-diagram-project"></i>
 
-<div class="project">
+            <h4>n8n</h4>
 
-<h3>Invoice Processing AI</h3>
+            <p>Workflow Automation</p>
 
-<p>
+        </div>
 
-Automatically extract invoice data using AI,
-store records,
-send notifications,
-and update accounting systems.
+        <div class="floating-card card3">
 
-</p>
+            <i class="fa-solid fa-cloud"></i>
 
-</div>
+            <h4>Make.com</h4>
 
-<div class="project">
+            <p>Business Integration</p>
 
-<h3>Telegram AI Assistant</h3>
+        </div>
 
-<p>
+        <div class="floating-card card4">
 
-An AI-powered Telegram assistant capable of answering questions,
-managing calendars,
-creating reminders,
-and automating workflows.
+            <i class="fa-solid fa-bolt"></i>
 
-</p>
+            <h4>OpenAI</h4>
 
-</div>
+            <p>AI Intelligence</p>
 
-<div class="project">
+        </div>
 
-<h3>Content Automation</h3>
+    </section>
 
-<p>
+    <!-- About section starts in Part 2 -->
 
-AI-generated YouTube Shorts workflow that creates scripts,
-images,
-videos,
-voiceovers,
-and automatically publishes content.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Why Work With Me?</h2>
-
-<div class="skills">
-
-<div class="skill">
-
-<h3>Save Time</h3>
-
-<p>Automate repetitive business processes.</p>
-
-</div>
-
-<div class="skill">
-
-<h3>Increase Productivity</h3>
-
-<p>Reduce manual work using AI-powered workflows.</p>
-
-</div>
-
-<div class="skill">
-
-<h3>Improve Accuracy</h3>
-
-<p>Minimize human error with intelligent automation.</p>
-
-</div>
-
-<div class="skill">
-
-<h3>Scale Faster</h3>
-
-<p>Build systems that grow with your business.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<h2>Bryan D. Mozar</h2>
-
-<p>AI Automation Specialist</p>
-
-<p>n8n • Make.com • OpenAI • API Integration • Workflow Automation</p>
-
-<p style="margin-top:20px;">
-© 2026 Bryan D. Mozar. All Rights Reserved.
-</p>
-
-</footer>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
