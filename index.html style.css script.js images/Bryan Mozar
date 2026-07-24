@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanyan | AI Automation Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Yanyan</h1>
+    <p>AI Automation Developer</p>
+
+    <a href="https://github.com/YOUR_GITHUB_USERNAME" class="btn">
+        View GitHub
+    </a>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+
+    <p>
+        I build AI automation systems using modern tools such as
+        n8n, OpenAI, Telegram Bots, Airtable, Google Workspace,
+        REST APIs, and AI Agents.
+    </p>
+
+    <p>
+        My goal is to automate repetitive business processes,
+        increase productivity, and integrate AI into real-world
+        workflows.
+    </p>
+
+</section>
+
+<section class="skills">
+
+<h2>Skills</h2>
+
+<div class="grid">
+
+<div class="card">n8n</div>
+
+<div class="card">OpenAI API</div>
+
+<div class="card">AI Agents</div>
+
+<div class="card">Telegram Bots</div>
+
+<div class="card">Airtable</div>
+
+<div class="card">Google Sheets</div>
+
+<div class="card">Google Calendar</div>
+
+<div class="card">REST APIs</div>
+
+<div class="card">Webhook Automation</div>
+
+<div class="card">JavaScript</div>
+
+<div class="card">HTML</div>
+
+<div class="card">CSS</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Featured Projects</h2>
+
+<div class="project">
+
+<h3>🦷 AI Dental Clinic Assistant</h3>
+
+<p>
+Automates Facebook Messenger inquiries, appointment booking,
+Google Calendar scheduling, and email confirmations.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>📈 AI Stock Trading Analyst</h3>
+
+<p>
+Uses AI with financial news APIs to analyze market sentiment
+and send Telegram trading alerts.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>📦 AI Inventory Management</h3>
+
+<p>
+Automatically updates Airtable inventory, tracks stock levels,
+and notifies managers when products reach threshold limits.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>🍔 AI Restaurant Ordering Bot</h3>
+
+<p>
+Telegram ordering assistant connected to Airtable menu with
+automatic inventory deduction.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>📄 AI Invoice Processing</h3>
+
+<p>
+Reads invoices using OCR and AI, extracts structured data,
+stores records in Airtable, and sends email notifications.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Technology Stack</h2>
+
+<ul>
+
+<li>OpenAI GPT</li>
+
+<li>n8n Automation</li>
+
+<li>Airtable</li>
+
+<li>Telegram Bot API</li>
+
+<li>Google Workspace APIs</li>
+
+<li>REST APIs</li>
+
+<li>Webhook Integrations</li>
+
+<li>JavaScript</li>
+
+<li>HTML & CSS</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Contact</h2>
+
+<p>Email: your@email.com</p>
+
+<p>GitHub: https://github.com/YOUR_GITHUB_USERNAME</p>
+
+<p>LinkedIn: https://linkedin.com/in/YOUR_PROFILE</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Yanyan | AI Automation Developer</p>
+
+</footer>
+
+</body>
+</html>
