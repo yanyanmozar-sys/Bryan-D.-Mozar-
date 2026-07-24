@@ -1,565 +1,341 @@
-/* ==========================================
-   Bryan Mozar AI Portfolio
-   Cyber Glassmorphism Theme
-========================================== */
+# 🤖 Bryan D. Mozar | AI Automation Portfolio
 
-:root{
+![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![n8n](https://img.shields.io/badge/n8n-AI%20Automation-FF6D5A)
+![Make.com](https://img.shields.io/badge/Make.com-Workflow%20Automation-6C63FF)
 
---bg:#050816;
---bg2:#0b1023;
---primary:#00f5ff;
---secondary:#6c63ff;
---text:#ffffff;
---text2:#cbd5e1;
---glass:rgba(255,255,255,.08);
---border:rgba(255,255,255,.15);
---shadow:0 10px 40px rgba(0,245,255,.25);
+## 🚀 About
 
-}
+Welcome to my AI Automation portfolio.
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+I'm **Bryan D. Mozar**, an AI Automation Specialist passionate about helping businesses eliminate repetitive tasks and improve productivity through intelligent workflow automation.
 
-html{
-scroll-behavior:smooth;
-}
+I build scalable automation solutions using:
 
-body{
+- 🤖 AI Agents
+- ⚙️ n8n
+- 🔷 Make.com
+- 🧠 OpenAI
+- 📊 Airtable
+- 📅 Google Workspace
+- 🌐 REST APIs
+- 📧 Email Automation
+- 💬 Telegram Bots
+- 📱 Facebook Messenger Automation
 
-font-family:Poppins,sans-serif;
-background:linear-gradient(135deg,var(--bg),#081226,var(--bg2));
-color:white;
-overflow-x:hidden;
+---
 
-}
+# 🌍 Live Portfolio
 
-/* Scrollbar */
+> Replace this with your GitHub Pages URL after publishing.
 
-::-webkit-scrollbar{
-width:8px;
-}
+```
+https://YOURUSERNAME.github.io/
+```
 
-::-webkit-scrollbar-thumb{
-background:var(--primary);
-border-radius:50px;
-}
+---
 
-::-webkit-scrollbar-track{
-background:#111827;
-}
+# 💻 Technologies
 
-/* Animated Background */
+| Technology | Description |
+|------------|-------------|
+| n8n | AI Workflow Automation |
+| Make.com | Business Automation |
+| OpenAI | AI Assistants & GPT |
+| Airtable | Database Automation |
+| Google Workspace | Gmail, Calendar, Sheets |
+| REST API | API Integration |
+| Webhooks | Event Automation |
+| JavaScript | Custom Logic |
+| HTML5 | Frontend |
+| CSS3 | Responsive UI |
 
-#particles{
+---
 
-position:fixed;
-width:100%;
-height:100%;
-left:0;
-top:0;
-z-index:-1;
+# 🔥 AI Automation Services
 
-background:
-radial-gradient(circle at 20% 20%,rgba(0,245,255,.15),transparent 25%),
-radial-gradient(circle at 80% 40%,rgba(108,99,255,.15),transparent 25%),
-radial-gradient(circle at 40% 80%,rgba(0,245,255,.08),transparent 25%);
+## 🤖 AI Agent Development
 
-animation:bgMove 20s linear infinite;
+Custom AI assistants using OpenAI and workflow automation.
 
-}
+---
 
-@keyframes bgMove{
+## ⚙️ Business Process Automation
 
-0%{
-transform:translateY(0);
-}
+Automate repetitive business processes using n8n and Make.com.
 
-50%{
-transform:translateY(-40px);
-}
+Examples:
 
-100%{
-transform:translateY(0);
-}
+- Lead Management
+- CRM Automation
+- Sales Pipelines
+- Customer Support
+- Reporting
 
-}
+---
 
-/* NAVIGATION */
+## 📅 Appointment Scheduling
 
-.navbar{
+Automated scheduling using
 
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:20px 8%;
-display:flex;
-justify-content:center;
-z-index:999;
-backdrop-filter:blur(20px);
-background:rgba(10,15,35,.55);
-border-bottom:1px solid rgba(255,255,255,.08);
+- Google Calendar
+- Calendly
+- Gmail
+- AI Chatbots
 
-}
+---
 
-.container{
+## 📧 Email Automation
 
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+Create intelligent workflows for
 
-}
+- Welcome Emails
+- Follow-ups
+- Invoice Reminders
+- Marketing Campaigns
 
-.logo{
+---
 
-font-size:30px;
-font-weight:700;
-color:white;
-text-decoration:none;
+## 📊 Inventory Automation
 
-}
+Inventory systems with
 
-.logo span{
+- Airtable
+- Google Sheets
+- Barcode Integration
+- Stock Alerts
 
-color:var(--primary);
+---
 
-}
+## 💬 Chatbot Development
 
-.nav-links{
+AI Chatbots for
 
-display:flex;
-list-style:none;
-gap:35px;
+- Telegram
+- Facebook Messenger
+- Websites
+- Customer Support
 
-}
+---
 
-.nav-links a{
+# 🚀 Featured Projects
 
-text-decoration:none;
-color:white;
-transition:.3s;
-font-weight:500;
+## 1. AI Sales Agent
 
-}
+**Tools**
 
-.nav-links a:hover{
+- n8n
+- OpenAI
+- Gmail
+- CRM
 
-color:var(--primary);
+Features
 
-}
+- Company Research
+- AI Email Writer
+- Lead Qualification
+- Automated Follow-up
 
-.menu-btn{
+---
 
-display:none;
-font-size:30px;
-cursor:pointer;
+## 2. Dental Clinic AI Assistant
 
-}
+Features
 
-/* HERO */
+- Facebook Messenger Bot
+- Appointment Scheduling
+- Google Calendar
+- Email Confirmation
+- AI FAQ Assistant
 
-.hero{
+---
 
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:120px 8%;
+## 3. Inventory Management Automation
 
-}
+Features
 
-.hero-content{
+- Airtable Database
+- Low Stock Alerts
+- Purchase Requests
+- Sales Dashboard
+- AI Analytics
 
-max-width:900px;
-width:100%;
+---
 
-}
+## 4. Invoice Processing AI
 
-/* Glass Card */
+Features
 
-.glass-card{
+- PDF Extraction
+- AI OCR
+- Airtable Storage
+- Email Notifications
 
-background:var(--glass);
+---
 
-backdrop-filter:blur(20px);
+## 5. Telegram AI Assistant
 
-border:1px solid var(--border);
+Features
 
-padding:60px;
+- AI Chat
+- Calendar Management
+- Reminder Creation
+- Workflow Execution
 
-border-radius:25px;
+---
 
-box-shadow:var(--shadow);
+## 6. Content Automation
 
-position:relative;
+Automatically create
 
-overflow:hidden;
+- YouTube Shorts
+- Social Media Posts
+- AI Images
+- AI Voiceovers
 
-}
+---
 
-.glass-card::before{
+# 📈 Workflow Expertise
 
-content:'';
+✔ AI Agents
 
-position:absolute;
+✔ Prompt Engineering
 
-width:300px;
-height:300px;
+✔ OpenAI API
 
-background:rgba(0,245,255,.08);
+✔ n8n
 
-border-radius:50%;
+✔ Make.com
 
-top:-120px;
-right:-120px;
+✔ Airtable
 
-}
+✔ Google Sheets
 
-.hero h3{
+✔ Gmail Automation
 
-font-size:22px;
-color:var(--primary);
+✔ Google Calendar
 
-margin-bottom:10px;
+✔ Telegram
 
-}
+✔ Facebook Messenger
 
-.hero h1{
+✔ APIs
 
-font-size:70px;
+✔ Webhooks
 
-margin-bottom:15px;
+✔ CRM
 
-line-height:1.1;
+✔ Lead Generation
 
-}
+✔ Sales Automation
 
-.hero h1 span{
+✔ Inventory Management
 
-color:var(--primary);
+✔ Invoice Automation
 
-}
+✔ Business Automation
 
-.hero h2{
+---
 
-font-size:30px;
+# 📞 Contact
 
-height:40px;
+📧 Email
 
-margin-bottom:25px;
+```
+your@email.com
+```
 
-color:#7dd3fc;
+🌐 Website
 
-}
+```
+https://yourdomain.com
+```
 
-.hero p{
+💼 LinkedIn
 
-font-size:18px;
+```
+https://linkedin.com/in/yourprofile
+```
 
-line-height:1.8;
+🐙 GitHub
 
-color:var(--text2);
+```
+https://github.com/yourusername
+```
 
-margin-bottom:40px;
+📘 Facebook
 
-}
+```
+https://facebook.com/yourprofile
+```
 
-/* BUTTONS */
+---
 
-.hero-buttons{
+# 📂 Installation
 
-display:flex;
-gap:20px;
-flex-wrap:wrap;
+Clone the repository
 
-margin-bottom:40px;
+```bash
+git clone https://github.com/YOURUSERNAME/YOURREPOSITORY.git
+```
 
-}
+Open
 
-.btn{
+```text
+index.html
+```
 
-padding:15px 40px;
+or enable **GitHub Pages**.
 
-border-radius:50px;
+---
 
-text-decoration:none;
+# 🚀 Deploy on GitHub Pages
 
-font-weight:600;
+1. Push the project to GitHub.
+2. Go to **Settings → Pages**.
+3. Select:
 
-transition:.4s;
+- Branch: `main`
+- Folder: `/ (root)`
 
-}
+4. Save.
 
-.primary{
+Your portfolio will be available at:
 
-background:var(--primary);
+```
+https://YOURUSERNAME.github.io/YOURREPOSITORY/
+```
 
-color:#000;
+---
 
-}
+# 📄 License
 
-.primary:hover{
+This portfolio is available for personal and professional use.
 
-transform:translateY(-5px);
+---
 
-box-shadow:0 10px 30px rgba(0,245,255,.45);
+# 👨‍💻 Author
 
-}
+## Bryan D. Mozar
 
-.secondary{
+**AI Automation Specialist**
 
-background:transparent;
+### Specializations
 
-border:2px solid var(--primary);
+- n8n Automation
+- Make.com Automation
+- AI Agents
+- OpenAI
+- API Integrations
+- Workflow Automation
+- Airtable
+- Google Workspace
 
-color:white;
+> "Automating repetitive work so businesses can focus on growth."
 
-}
+---
 
-.secondary:hover{
-
-background:var(--primary);
-
-color:black;
-
-}
-
-/* SOCIAL */
-
-.social-icons{
-
-display:flex;
-
-gap:18px;
-
-}
-
-.social-icons a{
-
-width:50px;
-
-height:50px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-border-radius:50%;
-
-background:rgba(255,255,255,.08);
-
-color:white;
-
-font-size:22px;
-
-transition:.3s;
-
-}
-
-.social-icons a:hover{
-
-background:var(--primary);
-
-color:black;
-
-transform:translateY(-8px);
-
-}
-
-/* Floating Cards */
-
-.floating-card{
-
-position:absolute;
-
-background:rgba(255,255,255,.06);
-
-backdrop-filter:blur(15px);
-
-border:1px solid rgba(255,255,255,.1);
-
-padding:20px;
-
-border-radius:20px;
-
-width:180px;
-
-text-align:center;
-
-animation:float 5s ease-in-out infinite;
-
-box-shadow:0 10px 30px rgba(0,245,255,.15);
-
-}
-
-.floating-card i{
-
-font-size:38px;
-
-color:var(--primary);
-
-margin-bottom:10px;
-
-}
-
-.card1{
-
-top:140px;
-left:40px;
-
-}
-
-.card2{
-
-top:180px;
-right:60px;
-
-}
-
-.card3{
-
-bottom:120px;
-left:80px;
-
-}
-
-.card4{
-
-bottom:100px;
-right:80px;
-
-}
-
-@keyframes float{
-
-0%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-18px);
-
-}
-
-100%{
-
-transform:translateY(0);
-
-}
-
-}
-
-/* Typing Cursor */
-
-#typing::after{
-
-content:"|";
-
-color:var(--primary);
-
-animation:blink .7s infinite;
-
-}
-
-@keyframes blink{
-
-50%{
-
-opacity:0;
-
-}
-
-}
-
-/* Responsive */
-
-@media(max-width:900px){
-
-.hero h1{
-
-font-size:48px;
-
-}
-
-.hero h2{
-
-font-size:24px;
-
-}
-
-.glass-card{
-
-padding:35px;
-
-}
-
-.nav-links{
-
-display:none;
-
-}
-
-.menu-btn{
-
-display:block;
-
-}
-
-.floating-card{
-
-display:none;
-
-}
-
-.hero-buttons{
-
-flex-direction:column;
-
-}
-
-.btn{
-
-width:100%;
-
-text-align:center;
-
-}
-
-}
-
-@media(max-width:600px){
-
-.hero{
-
-padding-top:140px;
-
-}
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-.hero p{
-
-font-size:16px;
-
-}
-
-.logo{
-
-font-size:24px;
-
-}
-
-}
+⭐ If you found this portfolio helpful, consider giving the repository a **Star**.
