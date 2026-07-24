@@ -1,234 +1,565 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ==========================================
+   Bryan Mozar AI Portfolio
+   Cyber Glassmorphism Theme
+========================================== */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+:root{
 
-    <title>Bryan Mozar | AI Automation Specialist</title>
+--bg:#050816;
+--bg2:#0b1023;
+--primary:#00f5ff;
+--secondary:#6c63ff;
+--text:#ffffff;
+--text2:#cbd5e1;
+--glass:rgba(255,255,255,.08);
+--border:rgba(255,255,255,.15);
+--shadow:0 10px 40px rgba(0,245,255,.25);
 
-    <meta name="description"
-        content="Bryan Mozar - AI Automation Specialist using n8n, Make.com, OpenAI, APIs, Airtable, Google Workspace and Business Workflow Automation.">
+}
 
-    <meta name="keywords"
-        content="AI Automation,n8n,Make.com,OpenAI,Workflow Automation,API,Airtable,Automation Specialist">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    <meta name="author" content="Bryan Mozar">
+html{
+scroll-behavior:smooth;
+}
 
-    <meta property="og:title" content="Bryan Mozar | AI Automation Portfolio">
+body{
 
-    <meta property="og:description"
-        content="Professional AI Automation Portfolio using n8n, Make.com, OpenAI and Workflow Automation">
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,var(--bg),#081226,var(--bg2));
+color:white;
+overflow-x:hidden;
 
-    <meta property="og:type" content="website">
+}
 
-    <meta property="og:image" content="assets/profile.jpg">
+/* Scrollbar */
 
-    <meta property="og:url" content="https://yourusername.github.io">
+::-webkit-scrollbar{
+width:8px;
+}
 
-    <link rel="icon" href="assets/favicon.ico">
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+::-webkit-scrollbar-track{
+background:#111827;
+}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+/* Animated Background */
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+#particles{
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+position:fixed;
+width:100%;
+height:100%;
+left:0;
+top:0;
+z-index:-1;
 
-    <link rel="stylesheet" href="style.css">
+background:
+radial-gradient(circle at 20% 20%,rgba(0,245,255,.15),transparent 25%),
+radial-gradient(circle at 80% 40%,rgba(108,99,255,.15),transparent 25%),
+radial-gradient(circle at 40% 80%,rgba(0,245,255,.08),transparent 25%);
 
-</head>
+animation:bgMove 20s linear infinite;
 
-<body>
+}
 
-    <!-- Animated Background -->
+@keyframes bgMove{
 
-    <div id="particles"></div>
+0%{
+transform:translateY(0);
+}
 
-    <!-- ===========================
-         NAVIGATION
-    ============================ -->
+50%{
+transform:translateY(-40px);
+}
 
-    <nav class="navbar">
+100%{
+transform:translateY(0);
+}
 
-        <div class="container">
+}
 
-            <a href="#" class="logo">
+/* NAVIGATION */
 
-                Bryan<span>Mozar</span>
+.navbar{
 
-            </a>
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:center;
+z-index:999;
+backdrop-filter:blur(20px);
+background:rgba(10,15,35,.55);
+border-bottom:1px solid rgba(255,255,255,.08);
 
-            <ul class="nav-links">
+}
 
-                <li><a href="#home">Home</a></li>
+.container{
 
-                <li><a href="#about">About</a></li>
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-                <li><a href="#skills">Skills</a></li>
+}
 
-                <li><a href="#projects">Projects</a></li>
+.logo{
 
-                <li><a href="#services">Services</a></li>
+font-size:30px;
+font-weight:700;
+color:white;
+text-decoration:none;
 
-                <li><a href="#timeline">Experience</a></li>
+}
 
-                <li><a href="#contact">Contact</a></li>
+.logo span{
 
-            </ul>
+color:var(--primary);
 
-            <div class="menu-btn">
+}
 
-                <i class="fa-solid fa-bars"></i>
+.nav-links{
 
-            </div>
+display:flex;
+list-style:none;
+gap:35px;
 
-        </div>
+}
 
-    </nav>
+.nav-links a{
 
-    <!-- ===========================
-            HERO SECTION
-    ============================ -->
+text-decoration:none;
+color:white;
+transition:.3s;
+font-weight:500;
 
-    <section id="home" class="hero">
+}
 
-        <div class="hero-content">
+.nav-links a:hover{
 
-            <div class="glass-card">
+color:var(--primary);
 
-                <h3>Hello, I'm</h3>
+}
 
-                <h1>
+.menu-btn{
 
-                    Bryan <span>Mozar</span>
+display:none;
+font-size:30px;
+cursor:pointer;
 
-                </h1>
+}
 
-                <h2>
+/* HERO */
 
-                    <span id="typing"></span>
+.hero{
 
-                </h2>
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:120px 8%;
 
-                <p>
+}
 
-                    I build intelligent AI Automation systems that save
-                    businesses hundreds of hours using
-                    <strong>n8n</strong>,
-                    <strong>Make.com</strong>,
-                    <strong>OpenAI</strong>,
-                    APIs,
-                    Airtable,
-                    Google Workspace,
-                    CRMs,
-                    and custom AI Agents.
+.hero-content{
 
-                </p>
+max-width:900px;
+width:100%;
 
-                <div class="hero-buttons">
+}
 
-                    <a href="#projects" class="btn primary">
+/* Glass Card */
 
-                        View Projects
+.glass-card{
 
-                    </a>
+background:var(--glass);
 
-                    <a href="assets/Bryan-Mozar-CV.pdf"
-                        class="btn secondary"
-                        download>
+backdrop-filter:blur(20px);
 
-                        <i class="fa-solid fa-download"></i>
+border:1px solid var(--border);
 
-                        Download CV
+padding:60px;
 
-                    </a>
+border-radius:25px;
 
-                </div>
+box-shadow:var(--shadow);
 
-                <div class="social-icons">
+position:relative;
 
-                    <a href="#" target="_blank">
+overflow:hidden;
 
-                        <i class="fab fa-github"></i>
+}
 
-                    </a>
+.glass-card::before{
 
-                    <a href="#" target="_blank">
+content:'';
 
-                        <i class="fab fa-linkedin"></i>
+position:absolute;
 
-                    </a>
+width:300px;
+height:300px;
 
-                    <a href="#" target="_blank">
+background:rgba(0,245,255,.08);
 
-                        <i class="fab fa-facebook"></i>
+border-radius:50%;
 
-                    </a>
+top:-120px;
+right:-120px;
 
-                    <a href="mailto:your@email.com">
+}
 
-                        <i class="fa-solid fa-envelope"></i>
+.hero h3{
 
-                    </a>
+font-size:22px;
+color:var(--primary);
 
-                </div>
+margin-bottom:10px;
 
-            </div>
+}
 
-        </div>
+.hero h1{
 
-        <!-- Floating AI Cards -->
+font-size:70px;
 
-        <div class="floating-card card1">
+margin-bottom:15px;
 
-            <i class="fa-solid fa-robot"></i>
+line-height:1.1;
 
-            <h4>AI Agents</h4>
+}
 
-            <p>Custom GPT Workflows</p>
+.hero h1 span{
 
-        </div>
+color:var(--primary);
 
-        <div class="floating-card card2">
+}
 
-            <i class="fa-solid fa-diagram-project"></i>
+.hero h2{
 
-            <h4>n8n</h4>
+font-size:30px;
 
-            <p>Workflow Automation</p>
+height:40px;
 
-        </div>
+margin-bottom:25px;
 
-        <div class="floating-card card3">
+color:#7dd3fc;
 
-            <i class="fa-solid fa-cloud"></i>
+}
 
-            <h4>Make.com</h4>
+.hero p{
 
-            <p>Business Integration</p>
+font-size:18px;
 
-        </div>
+line-height:1.8;
 
-        <div class="floating-card card4">
+color:var(--text2);
 
-            <i class="fa-solid fa-bolt"></i>
+margin-bottom:40px;
 
-            <h4>OpenAI</h4>
+}
 
-            <p>AI Intelligence</p>
+/* BUTTONS */
 
-        </div>
+.hero-buttons{
 
-    </section>
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 
-    <!-- About section starts in Part 2 -->
+margin-bottom:40px;
 
-    <script src="script.js"></script>
+}
 
-</body>
+.btn{
 
-</html>
+padding:15px 40px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.primary{
+
+background:var(--primary);
+
+color:#000;
+
+}
+
+.primary:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 30px rgba(0,245,255,.45);
+
+}
+
+.secondary{
+
+background:transparent;
+
+border:2px solid var(--primary);
+
+color:white;
+
+}
+
+.secondary:hover{
+
+background:var(--primary);
+
+color:black;
+
+}
+
+/* SOCIAL */
+
+.social-icons{
+
+display:flex;
+
+gap:18px;
+
+}
+
+.social-icons a{
+
+width:50px;
+
+height:50px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+color:white;
+
+font-size:22px;
+
+transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+background:var(--primary);
+
+color:black;
+
+transform:translateY(-8px);
+
+}
+
+/* Floating Cards */
+
+.floating-card{
+
+position:absolute;
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.1);
+
+padding:20px;
+
+border-radius:20px;
+
+width:180px;
+
+text-align:center;
+
+animation:float 5s ease-in-out infinite;
+
+box-shadow:0 10px 30px rgba(0,245,255,.15);
+
+}
+
+.floating-card i{
+
+font-size:38px;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+.card1{
+
+top:140px;
+left:40px;
+
+}
+
+.card2{
+
+top:180px;
+right:60px;
+
+}
+
+.card3{
+
+bottom:120px;
+left:80px;
+
+}
+
+.card4{
+
+bottom:100px;
+right:80px;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Typing Cursor */
+
+#typing::after{
+
+content:"|";
+
+color:var(--primary);
+
+animation:blink .7s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:0;
+
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+}
+
+.glass-card{
+
+padding:35px;
+
+}
+
+.nav-links{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.floating-card{
+
+display:none;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.btn{
+
+width:100%;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+padding-top:140px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+}
