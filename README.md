@@ -6,7 +6,7 @@
 <title>Bryan D. Mozar | AI Automation Specialist</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+![image alt](https://github.com/yanyanmozar-sys/Bryan-D.-Mozar-/blob/db0202332c63d562f3ce5a09ddc51a5ffd4e62fb/index.html%20style.css%20script.js%20images/n8n%20automation.png)
 <style>
 *{
     margin:0;
