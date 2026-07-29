@@ -1,249 +1,282 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryan Mozar | AI & Make.com Automation Specialist</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Bryan Mozar | AI Automation & Workflow Specialist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-card: #131b2e;
+            --accent-n8n: #ff6d5a;
+            --accent-make: #6f00ff;
+            --accent-ai: #00f2fe;
+            --text-main: #f0f4f8;
+            --text-muted: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #0B0F17;
-            color: #F3F4F6;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
-        .glow-purple {
-            box-shadow: 0 0 50px -10px rgba(147, 51, 234, 0.3);
+
+        header {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: radial-gradient(circle at 50% 30%, rgba(111, 0, 255, 0.15), transparent 70%);
         }
-        .glow-card:hover {
-            box-shadow: 0 0 30px -5px rgba(168, 85, 247, 0.25);
-            border-color: rgba(168, 85, 247, 0.4);
+
+        .avatar-container {
+            position: relative;
+            margin-bottom: 1.5rem;
         }
-        .gradient-text {
-            background: linear-gradient(135deg, #A855F7 0%, #EC4899 50%, #3B82F6 100%);
+
+        .avatar-svg {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00f2fe, #6f00ff);
+            padding: 4px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #ffffff, #00f2fe);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .bg-grid {
-            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 0);
-            background-size: 24px 24px;
+
+        p.subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .tech-logos {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .logo-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-ai);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-ai), transparent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag-n8n { background: rgba(255, 109, 90, 0.2); color: var(--accent-n8n); }
+        .tag-make { background: rgba(111, 0, 255, 0.2); color: #a855f7; }
+        .tag-ai { background: rgba(0, 242, 254, 0.2); color: var(--accent-ai); }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: var(--text-main);
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-ai);
         }
     </style>
 </head>
-<body class="bg-grid antialiased selection:bg-purple-500 selection:text-white">
+<body>
 
-    <!-- Header / Navbar -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#0B0F17]/80 border-b border-white/10">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-extrabold tracking-tight">
-                Bryan <span class="gradient-text">Mozar</span>
-            </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
-                <a href="#about" class="hover:text-purple-400 transition-colors">About</a>
-                <a href="#services" class="hover:text-purple-400 transition-colors">Services</a>
-                <a href="#projects" class="hover:text-purple-400 transition-colors">Automations</a>
-                <a href="#stack" class="hover:text-purple-400 transition-colors">Tech Stack</a>
-            </nav>
-            <a href="#contact" class="px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:opacity-90 transition-all glow-purple">
-                Let's Connect
-            </a>
+    <header>
+        <div class="avatar-container">
+            <!-- AI Generated Profile Graphic SVG -->
+            <svg class="avatar-svg" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="#0d1117"/>
+                <path d="M30 65 C 30 50, 70 50, 70 65" stroke="#00f2fe" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <circle cx="50" cy="38" r="14" fill="#00f2fe"/>
+                <circle cx="35" cy="50" r="4" fill="#ff6d5a"/>
+                <circle cx="65" cy="50" r="4" fill="#6f00ff"/>
+                <line x1="35" y1="50" x2="50" y2="38" stroke="#ff6d5a" stroke-width="2"/>
+                <line x1="65" y1="50" x2="50" y2="38" stroke="#6f00ff" stroke-width="2"/>
+            </svg>
+        </div>
+        <h1>Bryan Mozar</h1>
+        <p class="subtitle">AI Automation Engineer & Workflow Architect specializing in custom autonomous agents and no-code/low-code integrations.</p>
+
+        <div class="tech-logos">
+            <!-- Dynamically Rendered n8n SVG Logo -->
+            <div class="logo-card">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12h4m4 0h4m-8-6a3 3 0 100 6 3 3 0 000-6zm8 6a3 3 0 100 6 3 3 0 000-6z" stroke="#ff6d5a" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <span style="color: #ff6d5a;">n8n</span>
+            </div>
+
+            <!-- Dynamically Rendered Make.com SVG Logo -->
+            <div class="logo-card">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="3" width="7" height="7" rx="2" fill="#6f00ff"/>
+                    <rect x="14" y="3" width="7" height="7" rx="2" fill="#6f00ff"/>
+                    <rect x="14" y="14" width="7" height="7" rx="2" fill="#6f00ff"/>
+                    <rect x="3" y="14" width="7" height="7" rx="2" fill="#6f00ff"/>
+                    <path d="M10 6.5h4M17.5 10v4M14 17.5h-4M6.5 14v-4" stroke="#00f2fe" stroke-width="2"/>
+                </svg>
+                <span style="color: #a855f7;">Make.com</span>
+            </div>
+
+            <!-- AI Engine Logo -->
+            <div class="logo-card">
+                <i class="fa-solid fa-brain" style="color: #00f2fe;"></i>
+                <span style="color: #00f2fe;">AI Agents</span>
+            </div>
         </div>
     </header>
 
-    <main class="pt-32 px-6 max-w-6xl mx-auto">
-        
-        <!-- Hero Section -->
-        <section id="about" class="py-16 md:py-24 flex flex-col md:flex-row items-center justify-between gap-12">
-            <div class="flex-1 space-y-6">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold">
-                    <i data-lucide="zap" class="w-4 h-4"></i> Make.com & AI Specialist
-                </div>
-                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-                    Architecting <br>
-                    <span class="gradient-text">Autonomous Workflows</span> <br>
-                    & AI Systems.
-                </h1>
-                <p class="text-gray-400 text-lg leading-relaxed max-w-xl">
-                    Hi, I'm <strong class="text-white">Bryan Mozar</strong>. I help businesses eliminate repetitive manual work by building high-performing Make.com scenarios, custom API integrations, and AI agent workflows.
-                </p>
-                <div class="pt-4 flex flex-wrap gap-4">
-                    <a href="#projects" class="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-xl transition-all shadow-lg flex items-center gap-2">
-                        View Automations <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
-                    <a href="https://github.com" target="_blank" class="px-6 py-3 bg-white/5 border border-white/10 hover:bg-white/10 text-white font-semibold rounded-xl transition-all flex items-center gap-2">
-                        <i data-lucide="github" class="w-4 h-4"></i> GitHub Profile
-                    </a>
+    <main class="container">
+        <h2 class="section-title">Featured Automations</h2>
+        <div class="grid" style="margin-top: 1.5rem;">
+            
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-robot" style="color: #ff6d5a;"></i></div>
+                <h3>Autonomous AI Customer Support Agent</h3>
+                <p>An end-to-end support engine using n8n, OpenAI Function Calling, and Pinecone vector store to resolve technical queries autonomously.</p>
+                <div>
+                    <span class="tag tag-n8n">n8n</span>
+                    <span class="tag tag-ai">OpenAI</span>
                 </div>
             </div>
 
-            <!-- Visual Badge Card -->
-            <div class="flex-1 w-full max-w-md">
-                <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-xl glow-purple space-y-4">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-4">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-purple-600/20 border border-purple-500/30 flex items-center justify-center">
-                                <i data-lucide="cpu" class="w-5 h-5 text-purple-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-sm font-semibold text-white">Active Automation Engine</h3>
-                                <p class="text-xs text-gray-400">Make.com Scenario Matrix</p>
-                            </div>
-                        </div>
-                        <span class="inline-flex items-center gap-1.5 text-xs text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Running
-                        </span>
-                    </div>
-
-                    <div class="space-y-3 font-mono text-xs text-gray-300">
-                        <div class="bg-black/40 p-3 rounded-lg border border-white/5 flex justify-between items-center">
-                            <span>Webhooks & Custom APIs</span>
-                            <span class="text-purple-400">Connected</span>
-                        </div>
-                        <div class="bg-black/40 p-3 rounded-lg border border-white/5 flex justify-between items-center">
-                            <span>LLM / OpenAI Integration</span>
-                            <span class="text-purple-400">Active</span>
-                        </div>
-                        <div class="bg-black/40 p-3 rounded-lg border border-white/5 flex justify-between items-center">
-                            <span>CRM & Database Sync</span>
-                            <span class="text-purple-400">Real-time</span>
-                        </div>
-                    </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-diagram-project" style="color: #a855f7;"></i></div>
+                <h3>Multi-Channel CRM Sync Pipeline</h3>
+                <p>Make.com scenario capturing lead interactions across Webhooks, HubSpot, and Slack with automatic image generation for report digests.</p>
+                <div>
+                    <span class="tag tag-make">Make.com</span>
+                    <span class="tag tag-ai">Midjourney / DALL-E</span>
                 </div>
             </div>
-        </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-16 border-t border-white/10">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl font-bold">What I Build</h2>
-                <p class="text-gray-400 mt-2">End-to-end automation solutions tailored for scalability and zero-downtime execution.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl glow-card transition-all space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
-                        <i data-lucide="workflow" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">Make.com Scenarios</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Complex multi-branch scenarios with error handling, data transformation, routing, and pagination for enterprise tools.
-                    </p>
-                </div>
-
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl glow-card transition-all space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400">
-                        <i data-lucide="bot" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">AI Agent Workflows</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Embedding OpenAI, Claude, and custom LLM prompts directly into operational flows for smart categorization and triage.
-                    </p>
-                </div>
-
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl glow-card transition-all space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
-                        <i data-lucide="database" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold">API & Database Sync</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Connecting Webhooks, REST APIs, Airtable, Notion, CRM systems, and SQL databases with seamless two-way synchronizations.
-                    </p>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles" style="color: #00f2fe;"></i></div>
+                <h3>Automated Content & Image Engine</h3>
+                <p>Hybrid pipeline combining Make.com router logic and n8n code nodes to automatically generate articles, prompts, and visual assets.</p>
+                <div>
+                    <span class="tag tag-n8n">n8n</span>
+                    <span class="tag tag-make">Make.com</span>
+                    <span class="tag tag-ai">Stable Diffusion</span>
                 </div>
             </div>
-        </section>
 
-        <!-- Projects / Portfolio Section -->
-        <section id="projects" class="py-16 border-t border-white/10">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl font-bold">Featured Automations</h2>
-                <p class="text-gray-400 mt-2">A snapshot of systems engineered to optimize business ops.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project Card 1 -->
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 glow-card transition-all space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="text-xs font-semibold px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20">Make.com + OpenAI</span>
-                        <i data-lucide="external-link" class="w-4 h-4 text-gray-500"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white">AI Lead Qualification & CRM Router</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Captures incoming webhook leads, passes details to GPT-4o for scoring based on custom criteria, and routes high-priority prospects directly to HubSpot & Slack.
-                    </p>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="text-xs bg-black/40 text-gray-300 px-2.5 py-1 rounded-md border border-white/5">Make.com</span>
-                        <span class="text-xs bg-black/40 text-gray-300 px-2.5 py-1 rounded-md border border-white/5">OpenAI API</span>
-                        <span class="text-xs bg-black/40 text-gray-300 px-2.5 py-1 rounded-md border border-white/5">HubSpot</span>
-                        <span class="text-xs bg-black/40 text-gray-300 px-2.5 py-1 rounded-md border border-white/5">Slack</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 glow-card transition-all space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="text-xs font-semibold px-3 py-1 bg-pink-500/10 text-pink-400 rounded-full border border-pink-500/20">Airtable + Make.com</span>
-                        <i data-lucide="external-link" class="w-4 h-4 text-gray-500"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white">Automated Content Engine</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Transforms raw video transcriptions into multi-channel social media posts, generates thumbnail concepts, and drafts scheduled newsletters automatically.
-                    </p>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="text-xs bg-black/40 text-gray-300 px-2.5 py-1 rounded-md border border-white/5">Make.com</span>
-                        <span class="text-xs bg-black/40 text-gray-300 px-2.5 py-1 rounded-md border border-white/5">Airtable</span>
-                        <span class="text-xs bg-black/40 text-gray-300 px-2.5 py-1 rounded-md border border-white/5">Claude API</span>
-                        <span class="text-xs bg-black/40 text-gray-300 px-2.5 py-1 rounded-md border border-white/5">LinkedIn API</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack -->
-        <section id="stack" class="py-16 border-t border-white/10">
-            <div class="text-center max-w-2xl mx-auto mb-10">
-                <h2 class="text-3xl font-bold">Platforms & Integrations</h2>
-                <p class="text-gray-400 mt-2">Tools I use every day to connect services and build reliable pipelines.</p>
-            </div>
-
-            <div class="flex flex-wrap justify-center gap-3">
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium hover:border-purple-500 transition-colors">Make.com (Integromat)</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium hover:border-purple-500 transition-colors">OpenAI / Claude API</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium hover:border-purple-500 transition-colors">Webhooks & REST APIs</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium hover:border-purple-500 transition-colors">JSON & Regex</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium hover:border-purple-500 transition-colors">Airtable / Notion</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium hover:border-purple-500 transition-colors">HubSpot & Salesforce</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium hover:border-purple-500 transition-colors">Zapier</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium hover:border-purple-500 transition-colors">Python Scripting</span>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 border-t border-white/10 text-center">
-            <div class="max-w-xl mx-auto space-y-6">
-                <h2 class="text-3xl sm:text-4xl font-extrabold">Ready to Automate Your Business?</h2>
-                <p class="text-gray-400">Let's discuss how we can streamline your processes using Make.com and cutting-edge AI.</p>
-                <div class="pt-4 flex justify-center gap-4">
-                    <a href="mailto:bryanmozar@example.com" class="px-8 py-3.5 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl hover:opacity-90 transition-all glow-purple flex items-center gap-2">
-                        <i data-lucide="mail" class="w-5 h-5"></i> Send an Email
-                    </a>
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-white/10 py-8 text-center text-xs text-gray-500">
-        <p>&copy; 2026 Bryan Mozar. All rights reserved. Powered by GitHub Pages.</p>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:bryan@example.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p>© 2026 Bryan Mozar. Built for AI Automation & No-Code Orchestration.</p>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 </html>
