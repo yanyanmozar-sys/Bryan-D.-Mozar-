@@ -1,97 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Mozar | AI Automation Engineer</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-<title>Bryan Mozar | AI Automation Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-<script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/your-kit.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<!-- Animated Background -->
+<div class="particles"></div>
 
-<div id="particles"></div>
+<header>
 
-<div class="gradient1"></div>
-<div class="gradient2"></div>
-<div class="gradient3"></div>
+<nav class="navbar">
 
-<!-- Navigation -->
-
-<nav>
-
-<div class="logo">
-
-AI<span>Automation</span>
-
-</div>
+<h2 class="logo">
+<img src="logo.png" width="40">
+ Bryan Mozar
+</h2>
 
 <ul>
 
 <li><a href="#home">Home</a></li>
-
+<li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
-
-<li><a href="#workflow">Workflow</a></li>
-
-<li><a href="#stats">Statistics</a></li>
-
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
 <li><a href="#contact">Contact</a></li>
 
 </ul>
 
 </nav>
 
-<!-- Hero -->
+</header>
 
-<section id="home">
+<section id="home" class="hero">
 
 <div class="hero-content">
 
-<h3>Hello, I'm</h3>
+<h4>AI Automation Specialist</h4>
 
-<h1>Bryan Mozar</h1>
+<h1>
+Hi I'm
+<span>Bryan Mozar</span>
+</h1>
 
-<h2>
-
-<span id="typing"></span>
-
-</h2>
+<h2 id="typing"></h2>
 
 <p>
 
-Helping businesses automate repetitive work using AI,
-
-n8n, Make.com, APIs, OpenAI,
-
-Google Workspace and modern automation platforms.
+I build intelligent automations using
+n8n, Make.com, AI Agents, OpenAI,
+Telegram, Airtable,
+Google Workspace,
+and custom APIs.
 
 </p>
 
 <div class="buttons">
 
-<a href="#services" class="btn">
-
-Explore Services
-
+<a href="#projects" class="btn">
+View Projects
 </a>
 
-<a href="#workflow" class="btn-outline">
-
-View Workflows
-
+<a href="#contact" class="btn-outline">
+Contact Me
 </a>
 
 </div>
@@ -100,15 +80,96 @@ View Workflows
 
 <div class="hero-image">
 
-<div class="glass-card">
+<img src="images/profile.jpg">
 
-<i class="fa-solid fa-robot"></i>
+</div>
 
-<h3>AI Powered</h3>
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="glass">
 
 <p>
 
-Automating Businesses with Intelligent Workflows
+I specialize in AI-powered business automation.
+
+I create workflows that automate sales,
+customer support,
+lead generation,
+CRM,
+Google Workspace,
+Telegram bots,
+Facebook Messenger,
+AI Agents,
+and business operations using
+n8n and Make.com.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>AI Automation Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>n8n Automation</h3>
+
+<p>
+
+Custom workflow automation
+using self-hosted n8n.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Make.com</h3>
+
+<p>
+
+Business process automation
+using Make.com scenarios.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>AI Agents</h3>
+
+<p>
+
+OpenAI-powered assistants
+for customer support,
+sales,
+and operations.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Telegram Bots</h3>
+
+<p>
+
+AI chatbot
+OCR
+Image Recognition
+Scheduling
 
 </p>
 
@@ -118,259 +179,59 @@ Automating Businesses with Intelligent Workflows
 
 </section>
 
-<!-- Services -->
+<section id="projects">
 
-<section id="services">
+<h2>Featured Projects</h2>
 
-<h2 class="title">
+<div class="project-grid">
 
-AI Automation Services
+<div class="project">
 
-</h2>
+<img src="images/workflow1.png">
 
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-brain"></i>
-
-<h3>AI Agents</h3>
+<h3>Dental Clinic AI</h3>
 
 <p>
 
-OpenAI GPT
-
-Claude
-
-Gemini
-
-AI Decision Systems
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-gear"></i>
-
-<h3>n8n Automation</h3>
-
-<p>
-
-Telegram Bots
-
-CRM
-
-API Integration
-
-Workflow Automation
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-cloud"></i>
-
-<h3>Make.com</h3>
-
-<p>
-
-Business Automation
-
-Google Workspace
-
-Airtable
-
+Facebook Messenger AI Agent
+Appointment Booking
+Google Calendar
 Email Automation
 
 </p>
 
 </div>
 
-<div class="card">
+<div class="project">
 
-<i class="fa-solid fa-code"></i>
+<img src="images/workflow2.png">
 
-<h3>API Integration</h3>
-
-<p>
-
-REST APIs
-
-Webhook
-
-JSON
-
-Authentication
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h3>Analytics</h3>
+<h3>Inventory Automation</h3>
 
 <p>
 
-Business Dashboards
-
-Reports
-
-Data Automation
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-comments"></i>
-
-<h3>Chatbots</h3>
-
-<p>
-
-Messenger
-
-Telegram
-
-WhatsApp
-
-AI Customer Support
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Workflow -->
-
-<section id="workflow">
-
-<h2 class="title">
-
-Workflow Showcase
-
-</h2>
-
-<div class="workflow-grid">
-
-<div class="workflow-card">
-
-<h3>Dental Clinic AI</h3>
-
-<p>
-
-Facebook Messenger
-
-↓
-
-AI Agent
-
-↓
-
-Appointment Scheduler
-
-↓
-
-Google Calendar
-
-↓
-
-Email Confirmation
-
-</p>
-
-</div>
-
-<div class="workflow-card">
-
-<h3>Lead Generation</h3>
-
-<p>
-
-Website Form
-
-↓
-
-OpenAI
-
-↓
-
-CRM
-
-↓
-
-Email Sequence
-
-↓
-
-Sales Dashboard
-
-</p>
-
-</div>
-
-<div class="workflow-card">
-
-<h3>Invoice Automation</h3>
-
-<p>
-
-Upload PDF
-
-↓
-
-OCR
-
-↓
-
-AI Extraction
-
-↓
-
+Google Sheets
 Airtable
-
-↓
-
-Email
+Automatic Stock Updates
+Supplier Alerts
 
 </p>
 
 </div>
 
-<div class="workflow-card">
+<div class="project">
 
-<h3>Telegram AI Assistant</h3>
+<img src="images/project1.png">
+
+<h3>Outbound Sales AI</h3>
 
 <p>
 
-Telegram
+Lead Research
 
-↓
+AI Email Writer
 
-AI
-
-↓
-
-Google Calendar
-
-↓
-
-Sheets
-
-↓
-
-Reply
+CRM Automation
 
 </p>
 
@@ -380,63 +241,81 @@ Reply
 
 </section>
 
-<!-- Statistics -->
+<section id="skills">
+
+<h2>Technology Stack</h2>
+
+<div class="skills">
+
+<span>n8n</span>
+
+<span>Make.com</span>
+
+<span>OpenAI</span>
+
+<span>Claude</span>
+
+<span>Gemini</span>
+
+<span>Airtable</span>
+
+<span>Google Sheets</span>
+
+<span>Google Calendar</span>
+
+<span>Telegram</span>
+
+<span>Facebook Messenger</span>
+
+<span>Webhook</span>
+
+<span>REST API</span>
+
+<span>JavaScript</span>
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+</div>
+
+</section>
 
 <section id="stats">
 
-<h2 class="title">
+<h2>Achievements</h2>
 
-Automation Impact
-
-</h2>
-
-<div class="stats">
+<div class="stats-grid">
 
 <div class="stat">
 
-<h1 data-target="120">0</h1>
+<h1>50+</h1>
 
-<p>
-
-Projects
-
-</p>
+<p>Automations Built</p>
 
 </div>
 
 <div class="stat">
 
-<h1 data-target="1000">0</h1>
+<h1>20+</h1>
 
-<p>
-
-Hours Saved
-
-</p>
+<p>AI Workflows</p>
 
 </div>
 
 <div class="stat">
 
-<h1 data-target="98">0</h1>
+<h1>100+</h1>
 
-<p>
-
-Automation Accuracy %
-
-</p>
+<p>Hours Saved</p>
 
 </div>
 
 <div class="stat">
 
-<h1 data-target="30">0</h1>
+<h1>99%</h1>
 
-<p>
-
-AI Integrations
-
-</p>
+<p>Automation Accuracy</p>
 
 </div>
 
@@ -444,21 +323,15 @@ AI Integrations
 
 </section>
 
-<!-- Contact -->
-
 <section id="contact">
 
-<h2 class="title">
-
-Let's Build AI Together
-
-</h2>
+<h2>Contact Me</h2>
 
 <form>
 
-<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Name">
 
-<input type="email" placeholder="Your Email">
+<input type="email" placeholder="Email">
 
 <textarea placeholder="Tell me about your project"></textarea>
 
@@ -480,8 +353,6 @@ Send Message
 
 AI Automation Engineer
 
-Built with HTML CSS JavaScript
-
 </p>
 
 </footer>
@@ -489,5 +360,4 @@ Built with HTML CSS JavaScript
 <script src="script.js"></script>
 
 </body>
-
 </html>
